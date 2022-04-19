@@ -1,0 +1,26 @@
+{
+  "name": "@dctsph/psgc",
+  "version": "0.0.0",
+  "description": "Philippine Standard Geographic Code masterlist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Francis Andres (DCTS Inc.)",
+  "license": "MIT",
+  "keywords": [
+    "philippines address list",
+    "ph address list",
+    "psgc",
+    "philippine standard geographic code",
+    "philippine geographic code"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dctsph/psgc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dctsph/psgc/issues"
+  },
+  "homepage": "https://github.com/dctsph/psgc#readme"
+}
