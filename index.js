@@ -43,11 +43,15 @@ function getRegionByProvince(prv_code) {
   return regions.filter(value => value.reg_code === filteredProvince.reg_code)
 }
 
+function getAllRegions() {
+  return regions
+}
+
 export default {
   getBarangaysByMunicipality,
   getMunicipalitiesByProvince,
   getProvincesByRegion,
   getBarangaysByProvince,
   getRegionByProvince,
-  regions
+  getAllRegions
 }

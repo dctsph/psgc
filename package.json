@@ -1,6 +1,6 @@
 {
   "name": "@dctsph/psgc",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Philippine Standard Geographic Code masterlist",
   "main": "index.js",
   "scripts": {
