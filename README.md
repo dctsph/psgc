@@ -8,7 +8,7 @@ A collection of Philippine Standard Geographic Code that were broken down by:
 - Regions
 
 ## PSGC Publication Date
-- Q4-2021
+- Q1-2022 ([Summary of Changes](https://psa.gov.ph/classification/psgc/downloads/PSGC%201Q%202022%20Summary%20of%20Changes.xlsx))
 
 ## Collection Samples
 ___
