@@ -16,7 +16,7 @@ ___
 ```json
 { "name": "Bayanan", "bgy_code": "042103004", "mun_code": "042103000" }
 ```
-### City/Munipality
+### City/Municipality
 ```json
 { "name": "City of Bacoor", "mun_code": "042103000", "prv_code": "042100000" }
 ```
