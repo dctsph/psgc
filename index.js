@@ -5,17 +5,20 @@ import regions from "./json/regions.json"
 
 function getBarangaysByMunicipality(mun_code) {
   const municipalityCode = mun_code.toString()
-  return barangays.filter(value => value.mun_code === municipalityCode)
+  const filteredBarangays = barangays.filter(value => value.mun_code === municipalityCode)
+  return sortAlphabetically(filteredBarangays)
 }
 
 function getMunicipalitiesByProvince(prv_code) {
   const provincialCode = prv_code.toString()
-  return municipalities.filter(value => value.prv_code === provincialCode)
+  const filteredMunicipalities = municipalities.filter(value => value.prv_code === provincialCode)
+  return sortAlphabetically(filteredMunicipalities)
 }
 
 function getProvincesByRegion(reg_code) {
   const regionCode = reg_code.toString()
-  return provinces.filter(value => value.reg_code === regionCode)
+  const filteredProvinces = provinces.filter(value => value.reg_code === regionCode)
+  return sortAlphabetically(filteredProvinces)
 }
 
 function getBarangaysByProvince(prv_code) {
@@ -34,7 +37,7 @@ function getBarangaysByProvince(prv_code) {
     }
   }
 
-  return barangaysByProvince
+  return sortAlphabetically(barangaysByProvince)
 }
 
 function getRegionByProvince(prv_code) {
@@ -43,8 +46,21 @@ function getRegionByProvince(prv_code) {
   return regions.filter(value => value.reg_code === filteredProvince.reg_code)
 }
 
+function getAllProvinces() {
+  return sortAlphabetically(provinces)
+}
+
 function getAllRegions() {
+  // Sort not needed, already arranged in ascending order based on PSGC code.
   return regions
+}
+
+function sortAlphabetically(array) {
+  array.sort(function(a, b) {
+    return a.name.localeCompare(b.name)
+  })
+
+  return array
 }
 
 export default {
@@ -53,5 +69,6 @@ export default {
   getProvincesByRegion,
   getBarangaysByProvince,
   getRegionByProvince,
+  getAllProvinces,
   getAllRegions
 }
